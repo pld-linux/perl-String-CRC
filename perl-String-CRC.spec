@@ -31,14 +31,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf README
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %{perl_sitearch}/String/CRC.pm
 %dir %{perl_sitearch}/auto/String/CRC
 %{perl_sitearch}/auto/String/CRC/CRC.bs
