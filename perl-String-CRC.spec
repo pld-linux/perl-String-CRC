@@ -3,7 +3,7 @@ Summary:	String-CRC perl module
 Summary(pl):	Modu³ perla String-CRC
 Name:		perl-String-CRC
 Version:	1.0
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
