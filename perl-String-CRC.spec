@@ -9,7 +9,7 @@ Summary:	String::CRC perl module
 Summary(pl):	Modu³ perla String::CRC
 Name:		perl-String-CRC
 Version:	1.0
-Release:	8
+Release:	9
 License:	Public Domain
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
