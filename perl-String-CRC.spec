@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	String
 %define	pnam	CRC
-Summary:	String-CRC perl module
-Summary(pl):	Modu³ perla String-CRC
+Summary:	String::CRC perl module
+Summary(pl):	Modu³ perla String::CRC
 Name:		perl-String-CRC
 Version:	1.0
 Release:	7
@@ -14,10 +14,10 @@ BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-String-CRC - calculates CRC of various lenghts.
+String::CRC - calculates CRC of various lenghts.
 
 %description -l pl
-String-CRC - oblicza CRC ró¿nej d³ugo¶ci.
+String::CRC - oblicza CRC ró¿nej d³ugo¶ci.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
