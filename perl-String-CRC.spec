@@ -5,11 +5,11 @@ Summary:	String::CRC perl module
 Summary(pl):	Modu³ perla String::CRC
 Name:		perl-String-CRC
 Version:	1.0
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -23,7 +23,8 @@ String::CRC - oblicza CRC ró¿nej d³ugo¶ci.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -37,8 +38,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitearch}/String/CRC.pm
-%dir %{perl_sitearch}/auto/String/CRC
-%{perl_sitearch}/auto/String/CRC/CRC.bs
-%attr(755,root,root) %{perl_sitearch}/auto/String/CRC/CRC.so
+%{perl_vendorarch}/String/CRC.pm
+%dir %{perl_vendorarch}/auto/String/CRC
+%{perl_vendorarch}/auto/String/CRC/CRC.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/String/CRC/CRC.so
 %{_mandir}/man3/*
