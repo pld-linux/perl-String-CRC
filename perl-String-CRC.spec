@@ -25,7 +25,7 @@ String::CRC - oblicza CRC ró¿nej d³ugo¶ci.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
