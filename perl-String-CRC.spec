@@ -6,7 +6,7 @@
 %define		pdir	String
 %define		pnam	CRC
 Summary:	String::CRC perl module
-Summary(pl):	Modu≥ perla String::CRC
+Summary(pl.UTF-8):   Modu≈Ç perla String::CRC
 Name:		perl-String-CRC
 Version:	1.0
 Release:	9
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 String::CRC - calculates CRC of various lenghts.
 
-%description -l pl
-String::CRC - oblicza CRC rÛønej d≥ugo∂ci.
+%description -l pl.UTF-8
+String::CRC - oblicza CRC r√≥≈ºnej d≈Çugo≈õci.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
