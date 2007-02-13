@@ -6,7 +6,7 @@
 %define		pdir	String
 %define		pnam	CRC
 Summary:	String::CRC perl module
-Summary(pl.UTF-8):   Moduł perla String::CRC
+Summary(pl.UTF-8):	Moduł perla String::CRC
 Name:		perl-String-CRC
 Version:	1.0
 Release:	9
