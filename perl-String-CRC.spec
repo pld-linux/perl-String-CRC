@@ -5,24 +5,25 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	String
 %define		pnam	CRC
-Summary:	String::CRC perl module
-Summary(pl.UTF-8):	Moduł perla String::CRC
+Summary:	String::CRC - Perl interface to Cyclic Redundancy Check generation
+Summary(pl.UTF-8):	String::CRC - perlowy interfejs do generowania CRC
 Name:		perl-String-CRC
 Version:	1.0
 Release:	10
 License:	Public Domain
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/String/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ba07f022b5abf869a7b73f98f8abcf9f
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/String-CRC/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-String::CRC - calculates CRC of various lenghts.
+String::CRC module calculates CRC of various lenghts.
 
 %description -l pl.UTF-8
-String::CRC - oblicza CRC różnej długości.
+Moduł String::CRC oblicza CRC różnej długości.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
