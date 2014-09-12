@@ -51,6 +51,5 @@ rm -rf $RPM_BUILD_ROOT
 %doc README
 %{perl_vendorarch}/String/CRC.pm
 %dir %{perl_vendorarch}/auto/String/CRC
-%{perl_vendorarch}/auto/String/CRC/CRC.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/String/CRC/CRC.so
 %{_mandir}/man3/*
