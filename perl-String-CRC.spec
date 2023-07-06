@@ -8,7 +8,7 @@ Summary:	String::CRC - Perl interface to Cyclic Redundancy Check generation
 Summary(pl.UTF-8):	String::CRC - perlowy interfejs do generowania CRC
 Name:		perl-String-CRC
 Version:	1.0
-Release:	27
+Release:	28
 License:	Public Domain
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/String/%{pdir}-%{pnam}-%{version}.tar.gz
