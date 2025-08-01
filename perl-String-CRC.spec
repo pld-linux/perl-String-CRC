@@ -13,6 +13,7 @@ License:	Public Domain
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/String/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ba07f022b5abf869a7b73f98f8abcf9f
+Patch0:		types.patch
 URL:		http://search.cpan.org/dist/String-CRC/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -26,6 +27,7 @@ Moduł String::CRC oblicza CRC różnej długości.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
+%patch -P0 -p1
 
 %build
 %{__perl} Makefile.PL \
